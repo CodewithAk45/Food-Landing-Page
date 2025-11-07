@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+ 
+  <header>
+    <nav class="navbar">
+      <div class="logo">A<span>K</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shops">Shops</a></li>
+        <li><a href="#Offer">Offer</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <button class="btn">Login</button>
+        <button class="btn-1">Sign Up</button>
+      </ul>
+      <div class="menu-icon" id="menuIcon">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="text">
+        <h1>All Fast Food is<br>Available at Foodle</h1>
+        <p>We are just a click away when you crave delicious fast food.</p>
+        <div class="buttons">
+          <button class="buy" onclick="buyNow()">Buy Now</button>
+          <button class="how" onclick="howToOrder()">How to Order</button>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="./assets/hero img.png" alt="Hero Image">
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="features">
+    <div class="feature-box">
+      <img src="./assets/fast icons.png" alt="">
+      <h3>Fast Delivery</h3>
+      <p>Your food arrives within 1-2 hours of ordering.</p>
+    </div>
+    <div class="feature-box">
+      <img src="./assets/fresh icons.png" alt="">
+      <h3>Fresh Food</h3>
+      <p>We deliver 100% fresh food, never stale.</p>
+    </div>
+    <div class="feature-box">
+      <img src="./assets/free icons.png" alt="">
+      <h3>Free Delivery</h3>
+      <p>No delivery charge-just order and enjoy.</p>
+    </div>
+  </section>
+
+ 
+  <section class="categories" id="shops">
+    <h2>Best Categories <span>Delivered</span></h2>
+    <p>Check out our top-selling food categories and order now!</p>
+    <div class="category-grid">
+      <div class="category-card">
+        <img src="./assets/burger1.png" alt="">
+        <p>Chicken Burger</p>
+        <button onclick="order('Chicken Burger')">Order Now</button>
+      </div>
+      <div class="category-card">
+        <img src="./assets/piza.png" alt="">
+        <p>Chicken Pizza</p>
+        <button onclick="order('Chicken Pizza')">Order Now</button>
+      </div>
+      <div class="category-card">
+        <img src="./assets/fries.img.png" alt="">
+        <p>French Fries</p>
+        <button onclick="order('French Fries')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="menu-section" id="menu">
+    <h2>Our <span>Regular</span> Menu</h2>
+    <p>Choose from our delicious regular menu.</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <img src="./assets/Burger.img.png" alt="">
+        <h3>Chicken Burger</h3>
+        <p>⭐⭐⭐⭐☆ (160)</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/piza.png" alt="">
+        <h3>Chicken Pizza</h3>
+        <p>⭐⭐⭐⭐☆ (142)</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/fry chicken.png" alt="">
+        <h3>Fried Chicken</h3>
+        <p>⭐⭐⭐⭐☆ (123)</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/pasta.png" alt="">
+        <h3>Pasta</h3>
+        <p>⭐⭐⭐⭐☆ (100)</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+      <div class="menu-card">
+        <img src="./assets/bryani.png" alt="">
+        <h3>Biryani</h3>
+        <p>⭐⭐⭐⭐☆ (200)</p>
+        <button onclick="buyNow()">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="offers" id="offers">
+    <div class="offer big">
+      <img src="./assets/fry chicken.png" alt="">
+      <div class="offer-text">
+        <h3>25% Discount</h3>
+        <p>Only £2.60</p>
+      </div>
+    </div>
+    <div class="offer small">
+      <img src="./assets/samosa.png" alt="">
+      <div class="offer-text">
+        <h4>Save 15%</h4>
+        <p>Tortilla Wrap Samosa</p>
+      </div>
+    </div>
+  </section>
+
+ 
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>Fooodish</h3>
+        <p>AK Fooodish © 2025 — All rights reserved.</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shops">Shops</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#contact">Contact</a></li>
+           <li><a href="#about">about</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 +91 89209 03243</p>
+        <p>📧 info@akfood.com</p>
+        <p>🏠 1234 Goregaon, Mumbai</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
+

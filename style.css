@@ -1,0 +1,454 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #fffaf7;
+  color: #333;
+}
+
+
+header {
+  background-color: antiquewhite;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.logo span {
+  color: orangered;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+   transition: all 0.4s ease;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #444;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: orangered;
+}
+
+.btn,
+.btn-1 {
+  border: none;
+  padding: 8px 20px;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn {
+  background: transparent;
+  color: orangered;
+}
+
+.btn-1 {
+  background: orangered;
+  color: white;
+}
+
+.btn-1:hover {
+  background: #d33a10;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+
+.hero {
+  background-color: antiquewhite;
+  padding: 60px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-content .text {
+  flex: 1 1 400px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.hero-content p {
+  color: #555;
+  margin: 20px 0;
+  font-size: 1.1rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.buy,
+.how {
+  padding: 10px 25px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.buy {
+  background: orangered;
+  color: #fff;
+}
+
+.buy:hover {
+  background: #d33a10;
+}
+
+.how {
+  background: transparent;
+  border: 2px solid orangered;
+  color: orangered;
+}
+
+.how:hover {
+  background: orangered;
+  color: white;
+}
+
+.hero-img img {
+  width: 100%;
+  max-width: 400px;
+ 
+}
+
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 50px 10%;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  text-align: center;
+  background: #fff0ec;
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1 1 250px;
+  transition: 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+
+.categories {
+  background: antiquewhite;
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.categories span {
+  color: orangered;
+}
+
+.categories p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.category-card {
+  background: #fff0ec;
+  border-radius: 20px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.category-card:hover{
+  transform: translateY(5px);
+}
+.category-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.category-card p {
+  margin: 10px 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.category-card button {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category-card button:hover {
+  background: #d33a10;
+}
+
+
+.menu-section {
+  text-align: center;
+  padding: 60px 10%;
+}
+
+.menu-section h2 span {
+  color: orangered;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.menu-card {
+  background: #fff0ec;
+  border-radius: 15px;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: contain;
+}
+
+.menu-card h3 {
+  margin: 10px 0;
+}
+
+.menu-card p {
+  color: #777;
+}
+
+.menu-card button {
+  background: orangered;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+
+.offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px 10%;
+}
+
+.offer {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  flex: 1 1 45%;
+  transition: 0.3s;
+}
+
+.offer img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.offer:hover {
+  transform: scale(1.03);
+}
+
+.offer-text {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+
+
+footer {
+  background: #ffe4d6;
+  padding: 60px 10%;
+  border-radius: 20px 20px 0 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.footer-col h3, .footer-col h4 {
+  color: orangered;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #555;
+  transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+  color: orangered;
+}
+
+.socials a {
+  color: #555;
+  font-size: 1.4rem;
+  margin-right: 15px;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  color: orangered;
+}
+
+/* ========== Responsive Breakpoints ========== */
+/* @media (max-width: 992px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    background: antiquewhite;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .offers {
+    flex-direction: column;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .socials a {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .buy, .how {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+.hero-img img {
+  max-width: 280px;
+}
+@media (max-width: 480px) {
+  section {
+    padding: 40px 5%;
+  }
+}   
